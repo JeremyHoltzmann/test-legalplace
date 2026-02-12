@@ -45,3 +45,6 @@ To make sure that you will not break anything in the existing code, we added the
 ```sh
 yarn start
 ```
+
+## 1ere étape
+Fix des erreurs de lint
