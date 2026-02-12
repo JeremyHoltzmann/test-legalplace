@@ -4,9 +4,9 @@ import {
   FervexRule,
   HerbalTeaRule,
   MagicPillRule,
-} from "./DrugRule";
+} from "./drugRules/rules";
 
-export const ruleFactory = (drugName) => {
+export const drugRulesFactory = (drugName) => {
   switch (drugName) {
     case "Dafalgan":
       return new DafalganRule();
