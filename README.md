@@ -46,5 +46,27 @@ To make sure that you will not break anything in the existing code, we added the
 yarn start
 ```
 
+
+# Déroulement du test
+Aucune IA n'a été utilisé pour ce test.
+
+Il a été écrit sur VS Code avec Copilot de désactivé.
+
+Temps passé : 1h35
+
 ## 1ere étape
-Fix des erreurs de lint
+Fix des erreurs de lint, afin de conserver un code propre, lisible et respectueux des normes mises en place.
+
+## 2ème étape
+### Ecriture des règles des médicaments
+Afin de découpler la logique métier de chaque médicaments, j'ai mis en place une interface contenant les méthodes à implémenter lors de l'ajout d'une nouveau médicaments. 
+J'ai ensuite implementé les règles pour chaques médicaments. Chacune de ses règles hérite de l'interface et implèmente les méthodes nécessaires au calculs de "benefit" et de "expireIn"
+Ajout d'un fichier de constant contenant le benefit max et min afin de pouvoir rapidement les modifier en cas de changement de règles métiers
+
+## 3ème étape
+Création d'une factory permettant de récuperer les règles de chaques médicaments en fonction de son nom. Si le nom ne se trouve pas dans la factory, les règles de base s'applique pour ce médicament.
+
+## 4ème étape
+Ecriture des tests afin de vérifier que la logique métier pour l'ensemble des médicaments est respectée. 
+Correction de la logique métier en cas de test non-valide.
+
