@@ -2,7 +2,11 @@ import { MIN_BENEFIT } from "../constants";
 
 export class DrugRule {
   updateBenefitValue(drug) {
-    drug.benefit = Math.max(MIN_BENEFIT, drug.benefit - 1);
+    let benefitDecrease = 1;
+
+    if (drug.expiresIn < 0) benefitDecrease = 2;
+
+    drug.benefit = Math.max(MIN_BENEFIT, drug.benefit - benefitDecrease);
   }
 
   updateExpirationValue(drug) {
