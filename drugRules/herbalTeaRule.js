@@ -6,6 +6,6 @@ export class HerbalTeaRule extends DrugRule {
 
     if (drug.expiresIn < 0) benefitIncrease = 2;
 
-    drug.benefit += Math.min(50, drug.benefit + benefitIncrease);
+    drug.benefit = Math.min(50, drug.benefit + benefitIncrease);
   }
 }
