@@ -1,6 +1,6 @@
 export class DrugRule {
   updateBenefitValue(drug) {
-    throw new Error("Update Method must be implemented for : ", drug.name);
+    drug.benefit = Math.max(0, drug.benefit - 1);
   }
 
   updateExpirationValue(drug) {
