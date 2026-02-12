@@ -52,6 +52,8 @@ Aucune IA n'a été utilisé pour ce test.
 
 Il a été écrit sur VS Code avec Copilot de désactivé.
 
+Je n'ai travaillé que sur la branche main. J'aurai bien évidemment crée une branche "dev" puis une branche pour le feature demandé dans un environnment de travail.
+
 Temps passé : 1h35
 
 ## 1ere étape
