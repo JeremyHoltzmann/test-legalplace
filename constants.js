@@ -1,0 +1,4 @@
+const MAX_BENEFIT = 50;
+const MIN_BENEFIT = 0;
+
+export { MAX_BENEFIT, MIN_BENEFIT };

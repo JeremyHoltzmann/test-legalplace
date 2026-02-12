@@ -1,4 +1,5 @@
 import { DrugRule } from "./drugRulesInterface";
+import { MAX_BENEFIT } from "../constants";
 
 export class FervexRule extends DrugRule {
   updateBenefitValue(drug) {
@@ -12,6 +13,6 @@ export class FervexRule extends DrugRule {
     if (drug.expiresIn <= 10) benefitIncrease = benefitIncrease + 1;
     if (drug.expiresIn <= 5) benefitIncrease = benefitIncrease + 1;
 
-    drug.benefit = Math.min(50, drug.benefit + benefitIncrease);
+    drug.benefit = Math.min(MAX_BENEFIT, drug.benefit + benefitIncrease);
   }
 }

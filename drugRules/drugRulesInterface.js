@@ -1,6 +1,8 @@
+import { MIN_BENEFIT } from "../constants";
+
 export class DrugRule {
   updateBenefitValue(drug) {
-    drug.benefit = Math.max(0, drug.benefit - 1);
+    drug.benefit = Math.max(MIN_BENEFIT, drug.benefit - 1);
   }
 
   updateExpirationValue(drug) {
